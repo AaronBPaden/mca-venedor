@@ -8,9 +8,12 @@
     --carouselBright: #f2f1ef;
     --carouselDark: #c0c0be;
     --bottomFooter: #434b4d;
+    --boxActive: #ffdf14;
     --text1: #4a4c4b;
     --text2: #878787;
     --text3: #e3e3e3;
+    --text4: #fafafa;
+    --sale: #ff0198;
 }
 
 .clear {
@@ -44,6 +47,10 @@ h3 {
 .top-header .nav a {
     padding: 2px;
     color: var(--text2);
+}
+
+.top-welcome {
+    padding-right: 0;
 }
 
 @media (min-width: 576px) {
@@ -164,8 +171,6 @@ h3 {
     opacity: 100;
 }
 
-/* footer section */
-
 .carousel-emphasis-top {
     font-size: 2em;
     color: white;
@@ -176,4 +181,154 @@ h3 {
     font-size: 2em;
     color: white;
     background: var(--bottomFooter);
+}
+
+.top-ads {
+    padding: 2rem 0;
+}
+
+.latest {
+    position: relative;
+    border-top: 1px solid var(--text3);
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.border-header {
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    z-index: 1;
+    padding: 0 1rem;
+    text-transform: capitalize;
+    border-left: 4px solid var(--highlight);
+    background: white;
+}
+
+.border-nav-buttons {
+    position: absolute;
+    top: -1.2rem;
+    right: 0;
+    z-index: 1;
+    padding-left: 1rem;
+    background: white;
+}
+
+.border-nav-buttons > .btn {
+    background: var(--text4);
+    border-radius: 0;
+    border: 1px solid var(--text3);
+}
+
+.border-nav-buttons > .btn:hover {
+    background: var(--highlight);
+}
+
+.border-nav-buttons img {
+    width: 0.8rem;
+    filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(240deg) brightness(94%) contrast(90%);
+}
+
+.border-nav-buttons > .btn:hover img {
+    filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(345deg) brightness(102%) contrast(104%);
+}
+
+.latest p {
+    color: var(--text2);
+}
+
+.product-inner {
+    position: relative;
+}
+
+.product-inner img {
+    width: 100%;
+}
+
+.sale {
+    position: absolute;
+    padding: 8px;
+    color: white;
+    background: var(--sale);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sale.new {
+    background: var(--highlight);
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.8rem 0;
+    width: 5rem;
+    height: 5rem;
+    background: var(--highlight);
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.welcome {
+    padding: 2rem 0;
+}
+
+.product > .btn {
+    position: absolute;
+    bottom: -2rem;
+}
+
+.product > .btn,
+.email-div > .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background: var(--bottomFooter);
+    color: white;
+    border-top: 2px solid var(--text2);
+}
+
+.bestsellers {
+    position: relative;
+    border-top: 1px solid var(--text3);
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.manufacturers {
+    position: relative;
+    border-top: 1px solid var(--text3);
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+/* footer section */
+
+.signup {
+    padding: 1.5rem;
+    background: var(--text3);
+    color: var(--text1);
+}
+
+.signup-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.email-div > input {
+    padding: 0.5rem;
+    background: var(--text3);
+    color: var(--text1);
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--text2);
+}
+
+.email-div > input:focus {
+    border-radius: 10px;
+    border: 2px solid yellow;
 }
