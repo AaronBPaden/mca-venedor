@@ -136,11 +136,11 @@
                                 <div class="row justify-content-center">
                                     <img class="img-fluid col-12 col-md-2" src="media/slide1_1.png" alt="carousel slide image">
                                     <div class="caoursel-text col-12 col-md-5">
-                                        <div>
-                                            <div class="carousel-emphasis-top">
+                                        <div class="d-flex flex-column align-items-start">
+                                            <div class="p-2 carousel-emphasis-top">
                                                 NEW
                                             </div>
-                                            <div class="carousel-emphasis-bottom">
+                                            <div class="p-2 carousel-emphasis-bottom">
                                                 Men Collection
                                             </div>
                                         </div>
@@ -155,11 +155,11 @@
                                 <div class="row justify-content-center">
                                     <img class="img-fluid col-12 col-md-2" src="media/slide1_1.png" alt="carousel slide image">
                                     <div class="caoursel-text col-12 col-md-5">
-                                        <div>
-                                            <div class="carousel-emphasis-top">
+                                        <div class="d-flex flex-column align-items-start">
+                                            <div class="p-2 carousel-emphasis-top">
                                                 NEW
                                             </div>
-                                            <div class="carousel-emphasis-bottom">
+                                            <div class="p-2 carousel-emphasis-bottom">
                                                 Men Collection
                                             </div>
                                         </div>
@@ -263,7 +263,7 @@
                         <button class="btn"><img src="media/chevron-right.svg" alt="navigate-right"></button>
                     </div>
                     <p>Special offers and biggest discounts for the most popular products.</p>
-                    <div class="row">
+                    <div class="row flex-column flex-md-row">
                         <div class="product col">
                             <div class="product-inner">
                                 <div class="sale new">new</div>
@@ -363,24 +363,28 @@
                         </div>
                         <div class="col">
                             <h2 class="footer-header">from twitter</h2>
-                            <div>
+                            <div class="twitter-post">
                                 <p>
                                     Lorem nobis fuga modi cupiditate numquam Nisi aut iure consequuntur!
-                                    <span class="post-time">about 1 hours ago</span>
+                                </p>
+                                <p class="post-time">
+                                    about 1 hours ago
                                 </p>
                             </div>
-                            <div>
+                            <div class="twitter-post">
                                 <p>
                                     Dolor fugiat modi dolor aspernatur recusandae Lorem distinctio quis fuga.
-                                    <span class="post-time">about 3 hours ago</span>
+                                </p>
+                                <p class="post-time">
+                                    about 3 hours ago
                                 </p>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="row">
-                                <h2 class="col footer-header">facebook</h2>
-                                <div class="col">
-                                    <button class="btn">
+                        <div class="col d-none d-md-block">
+                            <div class="facebook-title-row row justify-content-between">
+                                <h2 class="col-auto footer-header">facebook</h2>
+                                <div class="col-auto">
+                                    <button class="btn facebook-btn">
                                         <img class="img-fluid" src="media/thumbs-o-up.svg" alt="">Like!
                                     </button>
                                 </div>
@@ -388,29 +392,27 @@
                             <p>1452 people like <a href="#">PromoKit</a></p>
                             <div class="cutomers">
                                 <div class="row">
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-1.png" alt="customer photo">
                                         Anna
                                     </div>
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-2.png" alt="customer photo">
                                         Tom
                                     </div>
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-3.png" alt="customer photo">
                                         Antuan
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-4.png" alt="customer photo">
                                         Milla
                                     </div>
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-5.png" alt="customer photo">
                                         Justine
                                     </div>
-                                    <div class="col customer">
+                                    <div class="col-6 col-lg-4 customer">
                                         <img src="media/customer-6.png" alt="customer photo">
                                         Maria
                                     </div>
@@ -422,8 +424,8 @@
             </div>
             <div class="container-fluid bottom-footer">
                 <div class="container">
-                    <div class="row">
-                        <nav class="col social-nav">
+                    <div class="row align-items-center justify-content-between">
+                        <nav class="col-auto social-nav d-none d-md-block">
                             <ul class="nav">
                                 <li class="nav-item">
                                     <button class="btn"><img src="media/facebook.svg" alt="facebook"></button>
@@ -451,7 +453,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="col copyright">
+                        <div class="col-auto copyright">
                             &copy; 2012 Powered by WooCommerce&trade;. All Rights Reserved.
                         </div>
                     </div>

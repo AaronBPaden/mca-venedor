@@ -8,12 +8,19 @@
     --carouselBright: #f2f1ef;
     --carouselDark: #c0c0be;
     --bottomFooter: #434b4d;
+    --bottomFooterBorder: #535758;
     --boxActive: #ffdf14;
     --text1: #4a4c4b;
     --text2: #878787;
     --text3: #e3e3e3;
     --text4: #fafafa;
     --sale: #ff0198;
+    --facebookBtn: #0aa6b3;
+    --socialNav: #626665;
+}
+
+img {
+    max-width: 100%;
 }
 
 .clear {
@@ -245,6 +252,11 @@ h3 {
     width: 100%;
 }
 
+.product {
+    /* Prevent buttons from overlapping in small devices. */
+    margin-bottom: 2.5rem;
+}
+
 .sale {
     position: absolute;
     padding: 8px;
@@ -305,6 +317,10 @@ h3 {
     margin: 2rem 0;
 }
 
+.list-group-item {
+    border: 0;
+}
+
 /* footer section */
 
 .signup {
@@ -331,4 +347,105 @@ h3 {
 .email-div > input:focus {
     border-radius: 10px;
     border: 2px solid yellow;
+}
+
+.footer-links {
+    background: var(--bottomFooter);
+    color: var(--text3);
+}
+
+.footer-header {
+    padding: 0.5rem 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.footer-list {
+    list-style: inside square;
+    padding: 0;
+}
+
+.footer-list li {
+    padding: 0.5rem 0;
+}
+
+.footer-list li::marker {
+    color: var(--highlight);
+}
+
+.footer-list > li > a {
+    color: var(--text3);
+}
+
+.footer-list > li > a:hover {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+.twitter-post {
+    padding: 0.5rem 0;
+}
+
+.twitter-post p {
+    padding: 0;
+    margin: 0;
+}
+
+.post-time {
+    font-size: 0.7rem;
+    color: var(--text2);
+}
+
+.facebook-btn {
+    background: var(--facebookBtn);
+    color: white;
+}
+
+.facebook-btn img {
+    filter: invert(100%);
+    width: 1rem;
+    margin-right: 4px;
+}
+
+.facebook-content p {
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.facebook-title-row {
+    /* Remove negative margin from bootstrap. */
+    margin: 0;
+}
+
+.facebook-title-row > .col-auto:last-child {
+    padding-right: 0;
+}
+
+.bottom-footer {
+    background: var(--bottomFooter);
+    border-top: 3px groove var(--bottomFooterBorder);
+}
+
+.social-nav {
+    margin: 0.5rem 0;
+}
+
+.social-nav .btn {
+    background: var(--socialNav);
+    border-top: 1px solid var(--text2);
+}
+
+.social-nav img {
+    width: 1rem;
+    filter: invert(100%);
+}
+
+.social-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.copyright {
+    color: var(--text3);
+    font-size: 0.8rem;
 }
