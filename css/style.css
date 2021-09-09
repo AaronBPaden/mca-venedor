@@ -294,7 +294,8 @@ h3 {
 }
 
 .product > .btn,
-.email-div > .btn {
+.email-div > .btn,
+.carousel-item .btn {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
